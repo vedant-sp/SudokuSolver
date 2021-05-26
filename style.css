@@ -6,6 +6,17 @@ table,th,td{
 	border:1px solid grey;
 }
 
+table{
+	margin: 0 auto;
+	/*width:95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	padding-top: 100%;*/
+	/*margin: 0 auto;*/
+	border-collapse: collapse;
+}
+
+
 .top{
 	border-top: 2px solid white;
 }
@@ -18,16 +29,14 @@ table,th,td{
 .bottom{
 	border-bottom: 2px solid white;
 }
-table{
-	border-collapse: collapse;
-    margin: 0 auto;
-
-}
 
 .lol{
     text-align: center;
     color:white;
     font-family: "Sofia", sans-serif;
+    width: 95%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
 }
 
 .err{
@@ -39,17 +48,18 @@ table{
 .cell{
     width: 50px;
     height: 50px;
-    padding: 0px 0px;
+    /*flex: 1;*/
+    /*padding-top: 100%;*/
     font-size: 40px;
     text-align: center;
     border:none;
+    justify-content: center;
     background-color: transparent;
     color: white;
 }
 
 /*form{
-    align-content: center;
-
+	align-content: center;
 }*/
 
 div{
@@ -70,4 +80,68 @@ input.cell::-webkit-outer-spin-button,
 input.cell::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+#resetBut{
+	margin-left: 100px;
+}
+
+
+@media only screen and (max-width: 500px){
+	table{
+		width:95%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+		/*padding-top: 100%;*/
+		/*margin: 0 auto;*/
+		border-collapse: collapse;
+	}
+	.cell{
+	    width: 30px;
+	    height: 30px;
+	    /*flex: 1;*/
+	    /*padding-top: 100%;*/
+	    font-size: 25px;
+	    text-align: center;
+	    border:none;
+	    justify-content: center;
+	    background-color: transparent;
+	    color: white;
+	}
+	.but{
+    	margin-top: 10px;
+    	font-size: 30px;
+    	background-color: #d330fc;
+    	border-radius: 10px;
+    	/* color:white; */
+	}
+	#resetBut{
+		margin-left: 60px;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	table{
+		/*width:96%;
+		margin-left: 2%;
+		margin-right: 2%;*/
+		/*padding-top: 100%;*/
+		margin: 0 auto;
+		border-collapse: collapse;
+	}
+	.cell{
+	    width: 20px;
+	    height: 20px;
+	    /*flex: 1;*/
+	    /*padding-top: 100%;*/
+	    font-size: 20px;
+	    text-align: center;
+	    border:none;
+	    justify-content: center;
+	    background-color: transparent;
+	    color: white;
+	}
+	#resetBut{
+		margin-left: 40px;
+	}
 }
