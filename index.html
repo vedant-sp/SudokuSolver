@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href= "style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon">
+</head>
+<body>
+
+<h1 class="lol font-effect-fire">SUDOKU SOLVER</h1>
+<div>
+    <form>
+        <table id='MyTable'>
+            <tr>
+                <td class="top left"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top right"><input class="cell" type="number" max="9" min="1" ></td>
+            </tr>
+
+            <tr>
+                <td class="left"><input class="cell" type="number" max="9" min="1" ></td>
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="right"><input class="cell" type="number" max="9" min="1" ></td>
+            </tr>
+            
+            <tr>
+                <td class="left bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="right bottom"><input class="cell" type="number" max="9" min="1" ></td>
+            </tr>
+
+            <!--1 to 3 rows-->
+
+            <tr>
+                <td class="top left"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top right"><input class="cell" type="number" max="9" min="1" ></td>
+            </tr>
+
+            <tr>
+                <td class="left"><input class="cell" type="number" max="9" min="1" ></td>
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="right"><input class="cell" type="number" max="9" min="1" ></td>
+            </tr>
+            
+            <tr>
+                <td class="left bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="right bottom"><input class="cell" type="number" max="9" min="1" ></td>
+            </tr>
+            <!--4 to 6 rows-->
+
+            <tr>
+                <td class="top left"><input class="cell" type="number" max="9" min="1"  ></td>
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="top right"><input class="cell" type="number" max="9" min="1" ></td>
+            </tr>
+
+            <tr>
+                <td class="left"><input class="cell" type="number" max="9" min="1" ></td>
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="right"><input class="cell" type="number" max="9" min="1" ></td>
+            </tr>
+            
+            <tr>
+                <td class="left bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom right"><input class="cell" type="number" max="9" min="1" ></td>
+
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="bottom"><input class="cell" type="number" max="9" min="1" ></td>
+                <td class="right bottom"><input class="cell" type="number" max="9" min="1" ></td>
+            </tr>
+            <!--7 to 9 rows-->
+
+        </table>
+        <p id="errorMsg" class="err" style="font-size: 24px;"></p>
+        <input id="checkBut" class="but" type="button" value="Solve" onclick="getBoard()">
+        <input class="but" value="Reset" type="button" style="margin-left: 100px;" onclick="resetValues()">
+    </form>
+</div> 
+</body>
+<script src="main.js"></script>
+<!-- <script src="tp.js"></script> -->
+
+
+</html>
